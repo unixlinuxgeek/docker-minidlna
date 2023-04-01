@@ -1,0 +1,11 @@
+version: '3.4'    
+    
+services: 
+  minidlna:
+    image: unixlinuxgeek/minidlna
+    network_mode: host
+    volumes:
+      - /home/geek/transmission/downloads/movies:/opt/movies
+      - /home/geek/transmission/downloads/tv-series:/opt/tv-series
+      - /home/geek/transmission/downloads/kids:/opt/kids
+      - /home/geek/transmission/downloads/cartoons:/opt/cartoons
